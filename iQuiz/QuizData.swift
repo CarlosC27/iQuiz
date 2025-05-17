@@ -9,7 +9,7 @@ import Foundation
 
 struct QuizData {
     
-    static let mathQuestions: [[String: Any]] = [
+    static var mathQuestions: [[String: Any]] = [
         [
             "text": "What is the square root of 169?",
             "answers": ["12", "14.3746347", "13", "13.48462"],
@@ -37,7 +37,7 @@ struct QuizData {
         ]
     ]
     
-    static let marvelQuestions: [[String: Any]] = [
+    static var marvelQuestions: [[String: Any]] = [
         [
             "text": "What color is the Reality Stone?",
             "answers": ["Blue", "Purple", "Red", "Green"],
@@ -65,7 +65,7 @@ struct QuizData {
         ]
     ]
     
-    static let scienceQuestions: [[String: Any]] = [
+    static var scienceQuestions: [[String: Any]] = [
         [
             "text": "What is the unit of electrical resistance?",
             "answers": ["Ampere", "Volt", "Watt", "Ohm"],
@@ -93,7 +93,7 @@ struct QuizData {
         ]
     ]
     
-    static let popCultureQuestions: [[String: Any]] = [
+    static var popCultureQuestions: [[String: Any]] = [
         [
             "text": "What is the famous catchphrase RuPaul says at the end of each episode?",
             "answers": ["Shantay, you stay!", "If you can't love yourself, how in the hell you gonna love somebody else?", "The time has come to lip-sync for your life!", "Everybody say love!"],
@@ -121,7 +121,7 @@ struct QuizData {
         ]
     ]
     
-    static let quizzes: [[String: Any]] = [
+    static var quizzes: [[String: Any]] = [
         [
             "title": "Mathematics",
             "description": "Test your math skills",
@@ -139,7 +139,8 @@ struct QuizData {
             "description": "Test youw knowledge about science",
             "icon": "science-orange",
             "questions": scienceQuestions
-        ],
+        ]
+            ,
         [
             "title": "Pop Culture",
             "description": "Test your knowledge about pop culture",
